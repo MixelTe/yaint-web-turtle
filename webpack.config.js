@@ -31,6 +31,7 @@ module.exports = (env) => {
 				"@components": path.resolve(__dirname, "src/components"),
 				"@store": path.resolve(__dirname, "src/store"),
 				"@utils": path.resolve(__dirname, "src/utils"),
+      			"@server-data": path.resolve(__dirname, "server/data/"),
 			},
 		},
 		module: {

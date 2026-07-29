@@ -15,7 +15,8 @@ export const PersonCard = ({ refLink, person }) =>
 			<div className={classNames(styles.back, side ? styles.back_side_base : styles.back_side_rev)}>
 				<div className={styles.mainInfo}>
 					{/* eslint-disable-next-line no-undef */}
-					<img className={styles.photo} src={`${SERVERURL}/image?id=${person.imageId}`} alt="No img" />
+					{/* <img className={styles.photo} src={`${SERVERURL}/image?id=${person.imageId}`} alt="No img" /> */}
+					<img className={styles.photo} src={person.imageId} alt="No img" />
 					<h3 className={styles.name}>{person.name}</h3>
 					<div className={styles.links}>
 						<a className={styles.link} href={person.github} target="_blank" onClick={() => change()} rel="noreferrer">

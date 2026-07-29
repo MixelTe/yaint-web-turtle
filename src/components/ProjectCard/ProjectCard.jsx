@@ -10,7 +10,8 @@ export const ProjectCard = ({ project }) =>
 				<img
 					className={styles.img}
 					/* eslint-disable-next-line no-undef */
-					src={project.imageId !== null ? `${SERVERURL}/image?id=${project.imageId}` : img}
+					// src={project.imageId !== null ? `${SERVERURL}/image?id=${project.imageId}` : img}
+					src={project.imageId !== null ? project.imageId : img}
 					alt={project.title}
 				/>
 			</a>

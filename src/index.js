@@ -6,6 +6,9 @@ import { Provider } from "react-redux"
 import { store } from "@store/store.js"
 import { Preloader } from "@components/Preloader/Preloader"
 import { BrowserRouter } from "react-router-dom"
+import { patchFetch } from "./patchFetch"
+
+patchFetch();
 
 const root = ReactDOM.createRoot(document.getElementById("root"))
 
